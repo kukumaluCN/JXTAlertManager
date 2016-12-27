@@ -52,7 +52,7 @@ jxt_showLoadingHUDTitleMessage(@"带indicatorView的HUD", @"支持子标题，�
 ```
 
 
-## JXTAlertController
+## JXTAlertController(iOS8)
 
 ### 1.alert
 ```objective-c
