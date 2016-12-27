@@ -1,5 +1,6 @@
 # JXTAlertManager
 UIAlertView/UIAlertController便捷调用工具
+详细用法参考Demo
 
 ## JXTAlertView
 
