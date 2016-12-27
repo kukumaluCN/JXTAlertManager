@@ -1,0 +1,2 @@
+# JXTAlertManager
+UIAlertView/UIAlertController便捷调用工具
