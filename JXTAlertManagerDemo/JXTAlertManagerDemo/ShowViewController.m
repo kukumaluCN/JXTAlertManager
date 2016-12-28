@@ -53,9 +53,14 @@ static NSString *const cellId = @"CELLID";
                               ];
     
     [self.view addSubview:self.tableView];
-
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark - UI
 - (UILabel *)labelWithText:(NSString *)text
 {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
@@ -66,13 +71,6 @@ static NSString *const cellId = @"CELLID";
     
     return label;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-
-#pragma mark - UI
 - (UITableView *)tableView
 {
     if (!_tableView) {
@@ -135,6 +133,7 @@ static NSString *const cellId = @"CELLID";
     return self.sectionViewArray[section];
 }
 
+#pragma mark alert使用示例
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -337,12 +336,10 @@ static NSString *const cellId = @"CELLID";
             } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, JXTAlertController * _Nonnull alertSelf) {
                 if (buttonIndex == 0) {
                     UITextField *textField = alertSelf.textFields.firstObject;
-//                    NSLog(@"---%@", textField.text);
                     [self logMsg:textField.text];//不用担心循环引用
                 }
                 else if (buttonIndex == 1) {
                     UITextField *textField = alertSelf.textFields.lastObject;
-//                    NSLog(@"---%@", textField.text);
                     [self logMsg:textField.text];
                 }
             }];
