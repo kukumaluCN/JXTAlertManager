@@ -233,7 +233,14 @@ static JXTAlertView *__jxt_commonHUD = nil;
                 [indicatorView startAnimating];
                 __jxt_commonHUD.indicatorView = indicatorView;
                 //强制添加子视图
-                [__jxt_commonHUD setValue:indicatorView forKey:JXTAlertViewAccessoryViewKey];
+                if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+                {
+                    [__jxt_commonHUD setValue:indicatorView forKey:JXTAlertViewAccessoryViewKey];
+                }
+                else
+                {
+                    [__jxt_commonHUD addSubview:indicatorView];
+                }
                 break;
             }
             case JXTAlertHUDTypeProgress:
@@ -244,7 +251,14 @@ static JXTAlertView *__jxt_commonHUD = nil;
                 progressView.progress = 0.0;
                 __jxt_commonHUD.progressView = progressView;
                 //强制添加子视图
-                [__jxt_commonHUD setValue:progressView forKey:JXTAlertViewAccessoryViewKey];
+                if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+                {
+                    [__jxt_commonHUD setValue:progressView forKey:JXTAlertViewAccessoryViewKey];
+                }
+                else
+                {
+                    [__jxt_commonHUD addSubview:progressView];
+                }
                 break;
             }
         }
@@ -422,8 +436,15 @@ static JXTAlertView *__jxt_commonHUD = nil;
         case JXTAlertHUDTypeLoading:
         {
             [alertHUD.indicatorView stopAnimating];
+            if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+            {
+                [alertHUD setValue:nil forKey:JXTAlertViewAccessoryViewKey];
+            }
+            else
+            {
+                [alertHUD.indicatorView removeFromSuperview];
+            }
             alertHUD.indicatorView = nil;
-            [alertHUD setValue:nil forKey:JXTAlertViewAccessoryViewKey];
             break;
         }
         case JXTAlertHUDTypeProgress:
@@ -446,8 +467,15 @@ static JXTAlertView *__jxt_commonHUD = nil;
         case JXTAlertHUDTypeLoading:
         {
             [alertHUD.indicatorView stopAnimating];
+            if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+            {
+                [alertHUD setValue:nil forKey:JXTAlertViewAccessoryViewKey];
+            }
+            else
+            {
+                [alertHUD.indicatorView removeFromSuperview];
+            }
             alertHUD.indicatorView = nil;
-            [alertHUD setValue:nil forKey:JXTAlertViewAccessoryViewKey];
             break;
         }
         case JXTAlertHUDTypeProgress:
