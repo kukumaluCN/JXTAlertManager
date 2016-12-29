@@ -2,7 +2,7 @@
 UIAlertView/UIAlertController便捷调用工具  
 基于系统UIAlertView/UIAlertController封装，简化使用  
 详细用法参考Demo  
-![JXTAlertManager](/Users/JXT/Downloads/JXTAlertManager-3.png)
+![JXTAlertManager](https://github.com/kukumaluCN/JXTAlertManager/blob/master/JXTAlertManager.png)
 
 ## JXTAlertView
 
