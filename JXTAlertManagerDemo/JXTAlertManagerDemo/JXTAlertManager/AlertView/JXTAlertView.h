@@ -186,7 +186,9 @@ void jxt_dismissHUD();
 
 /**
  JXTAlertView 简介：
+ 
  开发调试使用简易alert/HUD工具
+ 
  部分提供C函数方便使用，所有show方法的C函数均默认回调主线程
  */
 @interface JXTAlertView : UIAlertView

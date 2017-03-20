@@ -34,13 +34,17 @@ typedef void (^JXTAlertActionBlock)(NSInteger buttonIndex, UIAlertAction *action
 
 /**
  JXTAlertController 简介：
+ 
  1.针对系统UIAlertController封装，支持iOS8及以上
+ 
  2.关于iOS9之后的`preferredAction`属性用法:
  `alertController.preferredAction = alertController.actions[0];`
  效果为将已存在的某个action字体加粗，原cancel样式的加粗字体成为deafult样式，cancel样式的action仍然排列在最下
  总体意义不大，且仅限于`UIAlertControllerStyleAlert`，actionSheet无效，功能略微鸡肋，不再单独封装
+ 
  3.关于`addTextFieldWithConfigurationHandler:`方法:
  该方法同样仅限于`UIAlertControllerStyleAlert`使用，使用场景较为局限，推荐直接调用，不再针对封装
+ 
  4.关于自定义按钮字体或者颜色，可以利用kvc间接访问这些私有属性，但是不推荐
  `[alertAction setValue:[UIColor grayColor] forKey:@"titleTextColor"]`
  */
