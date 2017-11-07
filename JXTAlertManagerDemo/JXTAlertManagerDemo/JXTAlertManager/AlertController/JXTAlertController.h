@@ -59,12 +59,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface JXTAlertController : UIAlertController
 /**
  JXTAlertController: alert弹出后，可配置的回调
  */
-@property (nullable, nonatomic, copy) void (^alertDidShown)();
+@property (nullable, nonatomic, copy) void (^alertDidShown)(void);
 
 /**
  JXTAlertController: alert关闭后，可配置的回调
  */
-@property (nullable, nonatomic, copy) void (^alertDidDismiss)();
+@property (nullable, nonatomic, copy) void (^alertDidDismiss)(void);
 
 /**
  JXTAlertController: 设置toast模式展示时间：如果alert未添加任何按钮，将会以toast样式展示，这里设置展示时间，默认1s
