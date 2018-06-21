@@ -108,17 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				A7AE30A520DB98DD006C690F /* JXTAlertView.h */,
-				A7AE30A620DB98DD006C690F /* AlertController */,
 				A7AE30A720DB98DD006C690F /* JXTAlertView.m */,
 			);
 			path = AlertView;
-			sourceTree = "<group>";
-		};
-		A7AE30A620DB98DD006C690F /* AlertController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
