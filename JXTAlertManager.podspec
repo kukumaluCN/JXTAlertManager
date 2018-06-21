@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.jianshu.com/u/c8f8558a4b1d'
 
   # 版本信息
-  s.version = '0.0.1'
+  s.version = '1.0.0'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
 
   # 地址
