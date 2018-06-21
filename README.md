@@ -1,4 +1,15 @@
 # JXTAlertManager
+
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/kukumaluCN/JXTAlertManager/blob/master/LICENSE)&nbsp;
+
+
+> update:
+> CocoaPods支持：
+> -1. 在 Podfile 中添加 pod 'JXTAlertManager'。
+> -2. 执行 pod install 或 pod update。
+> -3. 导入 <JXTAlertManager/JXTAlertManagerHeader.h>。
+
+
 UIAlertView/UIAlertController便捷调用工具  
 基于系统UIAlertView/UIAlertController封装，简化使用  
 详细用法参考Demo  
