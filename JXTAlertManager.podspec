@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   # 文件
-  s.source_files = 'JXTAlertManager/*.{h,m}'
-  s.public_header_files = 'JXTAlertManager/*.{h}'
+  s.source_files = 'JXTAlertManager/**/*.{h,m}'
+  s.public_header_files = 'JXTAlertManager/**/*.{h}'
   # s.resources = "JXTAlertManager/JXTAlertManager/*.xcassets"
 
 
