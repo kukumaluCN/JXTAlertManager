@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.jianshu.com/u/c8f8558a4b1d'
 
   # 版本信息
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
 
   # 地址
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   # 文件
-  s.source_files = 'JXTAlertManager', 'JXTAlertManager/**/*.{h,m}'
+  s.source_files = 'JXTAlertManager/**/*.{h,m}'
   # s.public_header_files = 'JXTAlertManager/**/*.{h}'
   # s.resources = "JXTAlertManager/JXTAlertManager/*.xcassets"
 
