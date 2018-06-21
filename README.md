@@ -4,10 +4,10 @@
 
 
 > 更新说明:  
-CocoaPods支持：  
-1. 在 Podfile 中添加 pod 'JXTAlertManager'。  
-2. 执行 pod install 或 pod update。  
-3. 导入 \<JXTAlertManager/JXTAlertManagerHeader.h\>。  
+> 支持：  
+> 1. 在 Podfile 中添加 pod 'JXTAlertManager'。  
+> 2. 执行 pod install 或 pod update。  
+> 3. 导入 \<JXTAlertManager/JXTAlertManagerHeader.h\>。  
 
 
 UIAlertView/UIAlertController便捷调用工具  
