@@ -83,6 +83,9 @@ static NSString *const cellId = @"CELLID";
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
         _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
+        
+        
+//        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     return _tableView;
 }

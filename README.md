@@ -1,7 +1,4 @@
 # JXTAlertManager
-
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYKit/master/LICENSE)
-
 UIAlertView/UIAlertController便捷调用工具  
 基于系统UIAlertView/UIAlertController封装，简化使用  
 详细用法参考Demo  

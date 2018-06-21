@@ -12,8 +12,8 @@
 		A768DF951E0A6388005659B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A768DF941E0A6388005659B5 /* Assets.xcassets */; };
 		A768DF981E0A6388005659B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A768DF961E0A6388005659B5 /* LaunchScreen.storyboard */; };
 		A768DFA11E0A63BE005659B5 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768DFA01E0A63BE005659B5 /* ShowViewController.m */; };
-		A768DFE51E0B7B67005659B5 /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A768DFE41E0B7B67005659B5 /* JXTAlertView.m */; };
-		A768E0121E0BBD6E005659B5 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768E0111E0BBD6E005659B5 /* JXTAlertController.m */; };
+		A7AE30A820DB98DD006C690F /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE30A220DB98DD006C690F /* JXTAlertController.m */; };
+		A7AE30A920DB98DD006C690F /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE30A720DB98DD006C690F /* JXTAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +26,11 @@
 		A768DF991E0A6388005659B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A768DF9F1E0A63BE005659B5 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		A768DFA01E0A63BE005659B5 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
-		A768DFE01E0B7AF3005659B5 /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertManagerHeader.h; sourceTree = "<group>"; };
-		A768DFE31E0B7B67005659B5 /* JXTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertView.h; sourceTree = "<group>"; };
-		A768DFE41E0B7B67005659B5 /* JXTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertView.m; sourceTree = "<group>"; };
-		A768E0101E0BBD6E005659B5 /* JXTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertController.h; sourceTree = "<group>"; };
-		A768E0111E0BBD6E005659B5 /* JXTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertController.m; sourceTree = "<group>"; };
+		A7AE30A120DB98DD006C690F /* JXTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertController.h; sourceTree = "<group>"; };
+		A7AE30A220DB98DD006C690F /* JXTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertController.m; sourceTree = "<group>"; };
+		A7AE30A320DB98DD006C690F /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertManagerHeader.h; sourceTree = "<group>"; };
+		A7AE30A520DB98DD006C690F /* JXTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertView.h; sourceTree = "<group>"; };
+		A7AE30A720DB98DD006C690F /* JXTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,7 @@
 		A768DF7C1E0A6388005659B5 = {
 			isa = PBXGroup;
 			children = (
+				A7AE309F20DB98DD006C690F /* JXTAlertManager */,
 				A768DF871E0A6388005659B5 /* JXTAlertManagerDemo */,
 				A768DF861E0A6388005659B5 /* Products */,
 			);
@@ -67,7 +68,6 @@
 				A768DF8C1E0A6388005659B5 /* AppDelegate.m */,
 				A768DF9F1E0A63BE005659B5 /* ShowViewController.h */,
 				A768DFA01E0A63BE005659B5 /* ShowViewController.m */,
-				A768DFA21E0A63F6005659B5 /* JXTAlertManager */,
 				A768DF941E0A6388005659B5 /* Assets.xcassets */,
 				A768DF961E0A6388005659B5 /* LaunchScreen.storyboard */,
 				A768DF991E0A6388005659B5 /* Info.plist */,
@@ -84,30 +84,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A768DFA21E0A63F6005659B5 /* JXTAlertManager */ = {
+		A7AE309F20DB98DD006C690F /* JXTAlertManager */ = {
 			isa = PBXGroup;
 			children = (
-				A768DFE01E0B7AF3005659B5 /* JXTAlertManagerHeader.h */,
-				A768DFE21E0B7B67005659B5 /* AlertView */,
-				A768DFE71E0B7B7C005659B5 /* AlertController */,
+				A7AE30A320DB98DD006C690F /* JXTAlertManagerHeader.h */,
+				A7AE30A020DB98DD006C690F /* AlertController */,
+				A7AE30A420DB98DD006C690F /* AlertView */,
 			);
-			path = JXTAlertManager;
+			name = JXTAlertManager;
+			path = ../JXTAlertManager;
 			sourceTree = "<group>";
 		};
-		A768DFE21E0B7B67005659B5 /* AlertView */ = {
+		A7AE30A020DB98DD006C690F /* AlertController */ = {
 			isa = PBXGroup;
 			children = (
-				A768DFE31E0B7B67005659B5 /* JXTAlertView.h */,
-				A768DFE41E0B7B67005659B5 /* JXTAlertView.m */,
+				A7AE30A120DB98DD006C690F /* JXTAlertController.h */,
+				A7AE30A220DB98DD006C690F /* JXTAlertController.m */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		A7AE30A420DB98DD006C690F /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A7AE30A520DB98DD006C690F /* JXTAlertView.h */,
+				A7AE30A620DB98DD006C690F /* AlertController */,
+				A7AE30A720DB98DD006C690F /* JXTAlertView.m */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
 		};
-		A768DFE71E0B7B7C005659B5 /* AlertController */ = {
+		A7AE30A620DB98DD006C690F /* AlertController */ = {
 			isa = PBXGroup;
 			children = (
-				A768E0101E0BBD6E005659B5 /* JXTAlertController.h */,
-				A768E0111E0BBD6E005659B5 /* JXTAlertController.m */,
 			);
 			path = AlertController;
 			sourceTree = "<group>";
@@ -182,10 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A768E0121E0BBD6E005659B5 /* JXTAlertController.m in Sources */,
 				A768DF8D1E0A6388005659B5 /* AppDelegate.m in Sources */,
+				A7AE30A820DB98DD006C690F /* JXTAlertController.m in Sources */,
+				A7AE30A920DB98DD006C690F /* JXTAlertView.m in Sources */,
 				A768DF8A1E0A6388005659B5 /* main.m in Sources */,
-				A768DFE51E0B7B67005659B5 /* JXTAlertView.m in Sources */,
 				A768DFA11E0A63BE005659B5 /* ShowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
