@@ -180,7 +180,7 @@ void jxt_setHUDFailMessage(NSString * _Nullable message);
 /**
  *  JXTAlertView: 关闭HUD
  */
-void jxt_dismissHUD();
+void jxt_dismissHUD(void);
 
 
 

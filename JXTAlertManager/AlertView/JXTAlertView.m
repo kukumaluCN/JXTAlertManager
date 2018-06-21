@@ -156,7 +156,7 @@ void jxt_setHUDFailMessage(NSString *message)
     jxt_setHUDFailTitleMessage(@"", message);
 }
 //关闭HUD
-void jxt_dismissHUD()
+void jxt_dismissHUD(void)
 {
     jxt_getSafeMainQueue(^{
         [JXTAlertView dismissHUD];

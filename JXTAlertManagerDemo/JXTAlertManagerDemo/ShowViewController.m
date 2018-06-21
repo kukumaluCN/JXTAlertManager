@@ -84,8 +84,12 @@ static NSString *const cellId = @"CELLID";
         _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
         _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
         
-        
-//        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        } else {
+            // Fallback on earlier versions
+            
+        }
     }
     return _tableView;
 }
