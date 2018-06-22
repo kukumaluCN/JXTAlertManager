@@ -1,6 +1,8 @@
 # JXTAlertManager
 
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/kukumaluCN/JXTAlertManager/blob/master/LICENSE)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/JXTAlertManager.svg?style=flat)](https://cocoapods.org/pods/JXTAlertManager)&nbsp;
+[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-green.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
+[![License: MIT](https://img.shields.io/cocoapods/l/JXTAlertManager.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 
 > 更新说明:  
