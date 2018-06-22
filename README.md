@@ -9,7 +9,9 @@
 > CocoaPods支持：  
 > 1. 在 Podfile 中添加 pod 'JXTAlertManager'。  
 > 2. 执行 pod install 或 pod update。  
-> 3. 导入 \<JXTAlertManager/JXTAlertManagerHeader.h\>。    
+> 3. 导入 \<JXTAlertManager/JXTAlertManagerHeader.h\>。   
+
+
 > 如果只需要JXTAlertController，见[JXTAlertController](https://github.com/kukumaluCN/JXTAlertController)
 
 
